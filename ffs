@@ -1,0 +1,4 @@
+prun -np 16 -script $PRUN_ETC/prun-openmpi /home/hpcl2201/projects/hpc1-asg3/psort 1000
+prun -np 2 -script $PRUN_ETC/prun-openmpi valgrind --suppressions=openmpi-valgrind.supp --leak-check=full /home/hpcl2201/projects/hpc1-asg3/psort 1000
+prun -np 2 -script $PRUN_ETC/prun-openmpi /home/hpcl2201/projects/hpc1-asg3/psort 1000
+prun -np 1 -script $PRUN_ETC/prun-openmpi /home/hpcl2201/projects/hpc1-asg3/psort 1000000000
